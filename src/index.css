@@ -1,0 +1,206 @@
+body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    #root {
+      padding: 20px;
+    }
+
+    .payment-link-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 16px;
+      padding: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .payment-link-container:hover {
+      background-color: #e6f2ff; /* Azul claro */
+    }
+
+    .payment-link-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .payment-link-columns {
+      display: flex;
+      width: 100%;
+    }
+
+    .payment-link-column {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .payment-link-details {
+      margin-top: 8px;
+      padding-left: 16px;
+      border-left: 2px solid #ddd;
+      display: none;
+    }
+
+    .payment-link-details.expanded {
+      display: block;
+    }
+
+    .payment-link-status {
+      font-weight: bold;
+    }
+
+    .payment-link-menu {
+      position: relative;
+    }
+
+    .payment-link-menu-button {
+      background-color: #eee;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .payment-link-menu-options {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      display: none;
+    }
+
+    .payment-link-menu-options.show {
+      display: block;
+    }
+
+    .payment-link-menu-option {
+      display: block;
+      padding: 4px 0;
+      cursor: pointer;
+    }
+
+    .payment-link-menu-option:hover {
+      background-color: #f0f0f0;
+    }
+
+    .create-link-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .modal-content form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-content label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .modal-content input[type="text"],
+    .modal-content input[type="email"],
+    .modal-content input[type="number"],
+    .modal-content input[type="date"],
+    .modal-content select {
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .modal-buttons {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .modal-buttons button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .modal-buttons button[type="submit"] {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    .modal-buttons button[type="button"] {
+      background-color: #dc3545;
+      color: #fff;
+    }
+
+    .search-bar {
+      margin-bottom: 0;
+    }
+
+    .search-bar input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      width: 200px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .search-icon {
+      margin-right: 5px;
+      color: #888;
+    }
